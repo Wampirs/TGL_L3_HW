@@ -12,7 +12,7 @@
                     fibonacciSequence.Add(num <= 1 ? 1 :
                         fibonacciSequence[num - 2] + fibonacciSequence[num - 1]));
 
-            return fibonacciSequence.AsEnumerable().Where(x=>x<=_num).Select(x=>x).ToList();
+            return fibonacciSequence.AsEnumerable().Where(x=>x<=_num).Select(x=>x).ToList(); //Not the best solution, but used for more practice in LINQ
         }
     }
 }
