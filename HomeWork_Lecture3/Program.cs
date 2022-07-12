@@ -8,6 +8,8 @@ namespace HomeWork_Lecture3
         {
             int fact = FactorialCalculator.CalculateFactorial(Int32.Parse(Console.ReadLine()));
             Console.WriteLine($"Factorial of number is {fact}");
+            List<int> fib = FibonacciCalculator.GetFibonacciSequence(Int32.Parse(Console.ReadLine()));
+            fib.ForEach(num => Console.Write(num + " "));
         }
     }
 }
